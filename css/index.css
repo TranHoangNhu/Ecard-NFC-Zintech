@@ -151,7 +151,9 @@ h6,
     bottom: 45px;
     z-index: 99;
     border: none;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    /* background: linear-gradient(to bottom right, var(--primary), var(--secondary)); */
+    background:#ffbf00;
+    color: #fff;
 }
 
 
