@@ -539,7 +539,7 @@ h6,
     color: #fff;
 }
 
-button.button-gold {
+a.button-gold {
     border-radius: 100rem;
     padding: 1rem;
     font-family: 'Avenir Next';
@@ -554,7 +554,7 @@ button.button-gold {
     box-shadow: 2px 1000px 1px rgb(0 0 0 / 90%) inset;
   }
   
-  button.button-gold:hover {
+  a.button-gold:hover {
     box-shadow: 2px 1000px 1px rgb(0 0 0 / 100%) inset;
     color: #ffe28d;
   }
