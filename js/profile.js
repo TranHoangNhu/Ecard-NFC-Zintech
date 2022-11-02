@@ -1,18 +1,13 @@
-let mybutton = document.getElementById("back-to-top");
+var downContact = document.querySelector('#back-to-top');
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+function downloadCSV() {
+    var vcf = "data:text/x-vcard;charset=utf-8;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpQUk9ESUQ6LS8vQXBwbGUgSW5jLi8vaVBob25lIE9TIDkuMi4xLy9FTg0KTjpOaHU7VHJhbjs7Ow0KRk46IFppbnRlY2gNCk9SRzogbGVhZCB5b3VyIHNvbHV0aW9uOw0KVEVMO3R5cGU9V09SSzt0eXBlPVZPSUNFO3R5cGU9cHJlZjowOTYzNDAyMzM0DQpFTkQ6VkNBUkQ="; //Creates CSV File Format
+    var excel = encodeURI(vcf); //Links to CSV
+    var link = document.createElement("a");
+    link.setAttribute("href", excel); //Links to CSV File
+    link.setAttribute("download", "test.vcf"); //Filename that CSV is saved as
+    link.click();
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+downContact.addEventListener("click", downloadCSV);
+
