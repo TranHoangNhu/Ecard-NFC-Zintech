@@ -1,7 +1,7 @@
 var downContact = document.querySelector('#back-to-top');
 
 function downloadCSV() {
-    var vcf = "data:text/x-vcard;charset=utf-8;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpQUk9ESUQ6LS8vQXBwbGUgSW5jLi8vaVBob25lIE9TIDkuMi4xLy9FTg0KTjpOaHU7VHJhbjs7Ow0KRk46IFppbnRlY2gNCk9SRzogbGVhZCB5b3VyIHNvbHV0aW9uOw0KVEVMO3R5cGU9V09SSzt0eXBlPVZPSUNFO3R5cGU9cHJlZjowOTYzNDAyMzM0DQpFTkQ6VkNBUkQ="; //Creates CSV File Format
+    var vcf = "data:text/x-vcard;charset=utf-8;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpQUk9ESUQ6LS8vQXBwbGUgSW5jLi8vaVBob25lIE9TIDkuMi4xLy9FTg0KTjpDb21wYW55O1ppbnRlY2g7OzsNCkZOOiBaaW50ZWNoDQpPUkc6IGxlYWQgeW91ciBzb2x1dGlvbjsNClRFTDt0eXBlPVdPUks7dHlwZT1WT0lDRTt0eXBlPXByZWY6MDg1ODYyNjc2OA0KRU5EOlZDQVJE"; //Creates CSV File Format
     var excel = encodeURI(vcf); //Links to CSV
     var link = document.createElement("a");
     link.setAttribute("href", excel); //Links to CSV File
