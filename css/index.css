@@ -538,8 +538,3 @@ h6,
 .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link.active {
     color: #fff;
 }
-
-.button-gold {
-    border: 2px solid #ffe28d;
-    color: #ffe28d;
-}
